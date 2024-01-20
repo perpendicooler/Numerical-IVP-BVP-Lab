@@ -22,5 +22,5 @@ exact_sol = (t + 1)^2 - 0.5 * exp(t);
 for i = 1 : n+1
      ti = a + (i-1)*h;
     exact = subs(exact_sol, ti);
-    fprintf("t: %0.2f \ty: %0.7f\t exact: %0.7f \t%0.9f \n", a+(i-1)*h, y(i), exact, abs(y(i)-exact));
+    fprintf("t: %0.2f \ty: %0.7f\t exact: %0.7f\t error: %0.9f \n", a+(i-1)*h, y(i), exact, abs(y(i)-exact));
 end
