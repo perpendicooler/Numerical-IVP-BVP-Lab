@@ -1,5 +1,5 @@
-clc;
-clear all;
+clc
+clear all
 
 f = @(t, y) y - t^2 + 1;
 
